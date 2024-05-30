@@ -73,6 +73,16 @@ section h2 {
     font-size: 2em;
 }
 
+#source-code h2 a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent (h2) */
+}
+
+#source-code h2 a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+    color: inherit; /* Keep the same color on hover */
+}
+
 #team ul,
 #project ul {
     list-style-type: none;

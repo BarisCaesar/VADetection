@@ -16,6 +16,7 @@
                 <li><a href="#project">About Project</a></li>
                 <li><a href="#video">Video</a></li>
                 <li><a href="#poster">Poster</a></li>
+                <li><a href="#source-code">Source Code</a></li>
             </ul>
         </nav>
     </header>
@@ -50,17 +51,22 @@
 
     <section id="poster">
         <h2 id="downloadLink">Poster</h2>
-        <a href="poster.png" download>
+        <a href="poster.pdf" download>
             <img src="poster.png" alt="Downloadable Poster" style="max-width:100%; height:auto; border: 1px solid #ddd; border-radius: 8px;">
         </a>
+    </section>
+
+
+    <section id="source-code">
+        <h2><a href="source_code.zip" download>Source Code</a></h2>
     </section>
 
     <script>
 
         document.getElementById('downloadLink').addEventListener('click', function() {
             var link = document.createElement('a');
-            link.href = 'poster.png'; 
-            link.download = 'poster.png'; 
+            link.href = 'poster.pdf'; 
+            link.download = 'poster.pdf'; 
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
