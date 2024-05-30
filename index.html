@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term Project Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ventricular Arrythmia Detection</h1>
+        <nav>
+            <ul>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#project">About Project</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#poster">Poster</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="team">
+        <h2>Team</h2>
+        <h3>Students</h3>
+        <ul>
+            <li>Barış Sezer</li>
+            <li>Mete Tolga Gönültaş </li>
+        </ul>
+        <h3>Mentor</h3>
+        <ul>
+            <li>Prof. Dr. Süleyman Tosun</li>
+        </ul>
+    </section>
+
+    <section id="project">
+        <h2>About Project</h2>
+        <p>Ventricular Arrythmias(VAs) are the main reason of Sudden Cardiac Death(SCD) but SCD can be prevented by Implementable Cardioverter Defibrillators(ICDs) if VAs can be detected in-time.
+            Our goal in this project was to provide a deep learning model, specifically a 1D-CNN model, that can detect the arrythmias with high accuracy and efficiency. Since this model is going to be deployed on an embedded device,
+            We have also applied some methods such as quantization to reduce the size of our model while keeping its accuracy high.
+        </p>
+    </section>
+
+    <section id="video">
+        <h2>Video</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/m8Z3zexh8uk?si=f-UGQy0vyTXOPEn1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="poster">
+        <h2 id="downloadLink">Poster</h2>
+        <a href="poster.png" download>
+            <img src="poster.png" alt="Downloadable Poster" style="max-width:100%; height:auto; border: 1px solid #ddd; border-radius: 8px;">
+        </a>
+    </section>
+
+    <script>
+
+        document.getElementById('downloadLink').addEventListener('click', function() {
+            var link = document.createElement('a');
+            link.href = 'poster.png'; 
+            link.download = 'poster.png'; 
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+
+
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
